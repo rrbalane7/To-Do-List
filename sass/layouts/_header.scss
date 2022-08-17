@@ -1,0 +1,54 @@
+@use "../globals/fonts" as f;
+
+.header-cont{
+    display:flex;
+    min-height: 5em;
+    justify-content: space-between;
+    padding-inline: 5em;
+
+    .logo-header-cont{
+        display: flex;
+        align-items: center;
+    }
+
+    
+    .logo-header-cont > img{
+        width:50px;
+        margin-right: 1em;
+    }
+
+    .logo-header-cont > h1{
+        padding-top: 0.6em;
+        font-family: f.$brand-font;
+    }
+
+    .greetUser-cont{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 0.7em;
+
+    }
+
+    .greetUser-cont > * {
+        margin-left: 0.5em;
+    }
+    
+
+    .greetUser-cont > img{
+        width:45px;
+        margin-bottom: 1em;
+        
+    }    
+
+    .greetUser-cont > img:hover{
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+

@@ -1,0 +1,378 @@
+@media (max-width:1000px){
+    .header-cont{
+        padding-inline: 2.5em;    
+    
+    }
+
+    .main-cont{
+        display:grid;
+        grid-template-columns: 2fr 6fr;
+        grid-template-rows: 8fr 1fr;
+        justify-content: none;
+        gap: 0.5em 1em;
+        min-height: 48em;
+        
+    
+    }
+
+    .project-dashb{
+        padding-left: 1.5em;
+        grid-row: span 5;
+        width: 100%;
+        min-height: 48em;
+        
+    }
+    
+    
+    .myprojects-cont > h2, 
+    .default-proj{
+        font-size: 1.3rem;
+    }
+    
+    
+    .myprojects-cont > img {
+        width:25px;
+        margin-left: 1em;
+    
+    }
+
+    .center-cont{
+        grid-row: span 4;
+        width: 98%;
+    }
+
+    .task-window{
+
+        #task-name,
+        #edit-task-name{
+            font-size: 1rem;
+        
+        }
+
+
+    }
+
+    .upcoming-dues{
+        min-height: 15em;
+        width: 98%;
+    }
+    
+    .upcoming-dues h2{
+        font-size: 1.3rem;
+        text-align: center;
+    
+    }
+
+    .project-list{
+        padding-left: 0.5em;
+    
+  
+        .proj-item{
+            font-size: 1.3rem;
+            
+        }   
+    
+    }
+
+    .title-cont{
+        font-size: 1.1rem;
+    }
+    
+
+    .upcoming-dues > ul{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+
+}
+
+@media (max-width:640px){
+    .header-cont{
+        padding: 0 1em;
+        min-height: 60px;
+        
+        
+        .logo-header-cont{
+            padding: 0;
+            height: 90%;
+        }
+
+        .logo-header-cont > img{
+            width:40px;
+            
+        }
+
+        .logo-header-cont > h1{
+            font-size: 1.6rem;
+            // padding: 0;
+            
+        }
+
+        .greetUser-cont{
+            font-size: 1.2rem;
+            padding-top: 0;
+            height: 3.2em;
+   
+        }
+           
+        .greetUser-cont > img{
+            width:36px;
+            margin: 0;
+            
+        }
+        
+        .greetUser-cont > p{
+            margin-bottom: 0;
+        }
+    
+    }
+
+    .main-cont{
+        grid-template-columns: 1fr; 
+        gap: 0.5em;
+        margin-left:0.5em;
+        margin-right: 0.5em;   
+        margin-top: 0.5em;
+    
+    }
+
+    .project-dashb{
+        padding-left: 3em;
+        width: 14em;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(-16em);
+        position: absolute;
+        left:0;
+        z-index: 5;
+        
+        
+    }
+
+    .project-dashb.open{
+        display: block;
+        transform: translateX(1px);
+
+    }
+
+    
+    .myprojects-cont > h2, 
+    .default-proj{
+        font-size: 1.2rem;
+    }
+    
+    
+    .myprojects-cont > img {
+        width:20px;
+        margin-left: 1em;
+        margin-top: 0.2em;
+    
+    }
+
+    .center-cont{
+        grid-row: span 2;
+        width:100%;
+    }
+
+    .center-table{
+        width:100%
+    }
+
+    .center-table td{
+        font-size: 1rem;
+    }
+
+    .task-window{
+
+        #task-name,
+        #edit-task-name{
+            font-size: 1rem;
+        
+        }
+
+    }
+
+    .upcoming-dues{
+        min-height: 15em;
+        width: 100%;
+        grid-row: span 1
+    }
+    
+    .upcoming-dues h2{
+        font-size: 1.2rem;
+        text-align: center;
+    
+    }
+
+    .project-list{
+        padding-left: 0.5em;
+    
+  
+        .proj-item{
+            font-size: 1.2rem;
+            
+        }   
+    
+    }
+
+    .title-cont{
+        font-size: 1rem;
+    }
+    
+
+    .upcoming-dues > ul{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .due-data-rows > td{
+        font-size: 1rem;
+    }
+    
+
+    footer{
+   
+        p{
+            font-size: 0.9rem;
+        }
+    }
+
+    //Hamburger menu
+    .hamburger-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:30px;
+        min-height: 30px;
+        margin-left: 1em;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .hamburger-menu{
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background: var(--bshadow-color);
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .hamburger-cont:hover{
+        background-color: var(--hover-side-menu);
+    }
+
+    .hamburger-menu::before{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: var(--bshadow-color);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburger-menu::after{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: var(--bshadow-color);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburger-menu::before{
+        transform: translateY(-7px);
+    }
+
+    .hamburger-menu::after{
+        transform: translateY(7px);
+    }
+
+    .hamburger-cont.open .hamburger-menu{
+        transform: translate(-12px);
+        background: transparent;
+
+    }
+
+    .hamburger-cont.open .hamburger-menu::before{
+        transform: rotate(45deg) translate(8px, -8px);
+    }
+
+    .hamburger-cont.open .hamburger-menu::after{
+        transform: rotate(-45deg) translate(8px, 8px);
+    }
+
+
+}
+
+@media (max-width:480px){
+    .header-cont{
+        padding: 0 1em;
+        min-height: 55px;
+        
+        
+        .logo-header-cont{
+            padding-top: 0.3em;
+        }
+
+        .logo-header-cont > img{
+            width:35px;
+            
+        }
+
+        .logo-header-cont > h1{
+            font-size: 1.4rem;
+            
+        }
+
+        .greetUser-cont{
+            font-size: 1.1rem;
+   
+        }
+           
+        .greetUser-cont > img{
+            width:32px;
+            
+        }
+        
+    
+    }
+
+    .main-cont{
+        grid-template-rows: 2fr 1fr; 
+        min-height: 85vh; 
+    }
+
+    .project-dashb{
+        min-height: 85vh;
+    }
+
+    .center-cont{
+        grid-row: span 2;
+    }
+
+
+
+    .edit-window-btn,
+    .remove-btn{
+        width:16px;
+    }
+
+    .status-complete{
+        width: 10px;
+    }
+
+    .upcoming-dues{
+        min-height: 15em;
+        width: 100%;
+        grid-row: span 1;
+    }
+
+
+
+
+}
