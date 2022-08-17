@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="notebook-svgrepo-com.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO LIST</title>
+    <script type="module" crossorigin src="/To-Do-List/assets/index.c912cfa6.js"></script>
+    <link rel="stylesheet" href="/To-Do-List/assets/index.374512b7.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-cont">
+          <div class="logo-header-cont">
+            <img src="/To-Do-List/notebook-svgrepo-com.svg" alt="logo">
+            <h1>TO DO LIST</h1>
+          </div>
+          <div class="greetUser-cont">
+            <img class="user-name" src="/To-Do-List/user-svgrepo-com.svg" alt="user">
+            <p>Hi there,</p>
+            <p id="user">Lorem, ipsum.</p>  <!--Entered User's name here-->
+          </div>
+        </div>
+    </header>
+    <main>
+      <div class="hamburger-cont">
+        <div class="hamburger-menu"></div>
+      </div>
+      <div class="main-cont">
+        <nav class="project-dashb"> <!--left side nav-->
+          <h2 class="default-proj">Quick Tasks</h2>
+          <div class="myprojects-cont">
+            <h2>My Projects</h2>
+            <img id="add-proj" src="/To-Do-List/plus-svgrepo-com.svg" alt="add-proj">              
+          </div>
+          <ul class="project-list">
+          </ul>    
+        </nav>
+        <div class="center-cont">
+          <div class="table-title">
+            <h3 class="title-header">My Tasks</h3>
+            <img id="add-task" src="/To-Do-List/redplus-svgrepo-com.svg" alt="add-task">
+            <img id="delete-proj" src="/To-Do-List/cross-close-svgrepo-com.svg" alt="delete-proj">
+          </div>
+          <table class="center-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Task Description</th>
+                <th>Priority Class</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Edit / Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <nav class="upcoming-dues">
+          <div class="navright-title-cont">
+            <h2>Upcoming Due Tasks</h2>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <div id="overlay"></div>
+    <div id="app"></div>
+    <footer>
+      <p>&copy RRB 2022 The Odin Project</p>
+    </footer>
+    
+  </body>
+</html>
