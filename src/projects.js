@@ -23,8 +23,8 @@ export default class Project{
             newRow.appendChild(createData(this.taskList[index].priorityClass))
             newRow.appendChild(createData(this.taskList[index].dueDate))
             newRow.appendChild(createData(`<input type="checkbox" name="status-complete" class="status-complete">`))
-            newRow.appendChild(createData(`<img class="edit-window-btn" src="/edit-svgrepo-com.svg" alt="edit">
-            <img class="remove-btn" src="/trash-svgrepo-com.svg" alt="delete">`))
+            newRow.appendChild(createData(`<img class="edit-window-btn" src="edit-svgrepo-com.svg" alt="edit">
+            <img class="remove-btn" src="trash-svgrepo-com.svg" alt="delete">`))
             const tBody = document.querySelector("tbody");
             tBody.appendChild(newRow);
 
